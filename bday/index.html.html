@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erica Mae Martinez - 18th Birthday</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #240046, #5a189a, #9d4edd);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Opening Page */
+#openingPage {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(36,0,70,0.85), rgba(90,24,154,0.85)),
+    url('https://images.unsplash.com/photo-1519681393784-d120267933ba') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
+
+#openingPage h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+.enter-btn {
+    margin-top: 30px;
+    padding: 14px 45px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(45deg, #ffd700, #fff2a8);
+    color: #3c096c;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+.section {
+    padding: 100px 25px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(36,0,70,0.75), rgba(123,44,191,0.75)),
+    url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    margin: 10px 0;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+.date {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffd700;
+    font-weight: 500;
+}
+
+.countdown {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgba(255,255,255,0.15);
+    padding: 12px 22px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+/* Photo Section */
+.photo-section {
+    background: #ffffff;
+    color: #5a189a;
+}
+
+.photo-frame {
+    width: 320px;
+    height: 400px;
+    margin: 60px auto;
+}
+
+.photo-glow {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    padding: 10px;
+    background: linear-gradient(135deg, #ffd700, #fff2a8, #c77dff);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.main-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 30px;
+}
+
+/* Event Details */
+.dress-section {
+    background: #f3e8ff;
+    color: #4a148c;
+    padding: 90px 25px;
+}
+
+.dress-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.dress-sub {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.dress-card {
+    margin: 30px auto;
+    max-width: 380px;
+    background: white;
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    color: #5a189a;
+    text-align: left;
+    font-size: 15px;
+}
+
+.dress-card a {
+    color: #5a189a;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.color-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.color-item {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.color-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.white { background: #ffffff; border: 1px solid #ddd; }
+.beige { background: #f5f5dc; }
+.yellow { background: #ffd700; }
+
+/* Program */
+.program {
+    background: linear-gradient(to bottom, #f8f0ff, #e0aaff);
+    color: #4a148c;
+}
+
+.program h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.blank-space {
+    width: 320px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    color: #5a189a;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Footer */
+.footer {
+    background: #240046;
+    padding: 50px 20px;
+    font-style: italic;
+    color: #ffd700;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="openingPage">
+    <h1>Erica Turns 18</h1>
+    <button class="enter-btn" onclick="enterSite()">Open Invitation</button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="rapunzel-theme.mp3" type="audio/mpeg">
+</audio>
+
+<div id="mainContent" style="display:none;">
+
+<section class="section hero">
+    <h2>You Are Invited</h2>
+    <h1>Erica Mae Martinez</h1>
+    <h2>Magical 18th Birthday Celebration</h2>
+    <p class="date">March 21, 2026</p>
+    <div class="countdown" id="timer"></div>
+</section>
+
+<section class="section photo-section">
+    <div class="photo-frame">
+        <div class="photo-glow">
+            <img src="erica.jpg" alt="Erica Mae Martinez" class="main-photo">
+        </div>
+    </div>
+</section>
+
+<section class="dress-section">
+    <div class="dress-title">Event Details</div>
+    <div class="dress-sub">All you need to know 💜✨</div>
+
+    <div class="dress-card">
+        <p><strong>Time:</strong> 8:00 PM – 6:00 AM</p>
+        <p><strong>Venue:</strong> 
+        <a href="https://www.facebook.com/manangfelyresort/" target="_blank">
+        Manang Fely Resort (View Page)
+        </a></p>
+        <p><strong>Dress Code:</strong> Elegant attire in:</p>
+
+        <div class="color-row">
+            <div class="color-item">
+                <div class="color-circle white"></div>
+                White
+            </div>
+            <div class="color-item">
+                <div class="color-circle beige"></div>
+                Beige
+            </div>
+            <div class="color-item">
+                <div class="color-circle yellow"></div>
+                Golden Yellow
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section program">
+    <h2>18 Roses</h2>
+    <div class="blank-space">
+        1. Gian<br>
+        2. Myko<br>
+        3. Erica<br>
+        4. Erica<br>
+        5. Erica<br>
+        6. Erica<br>
+        7. Erica<br>
+        8. Erica<br>
+        9. Erica<br>
+        10. Erica<br>
+        11. Erica<br>
+        12. Erica<br>
+        13. Erica<br>
+        14. Erica<br>
+        15. Erica<br>
+        16. Erica<br>
+        17. Erica<br>
+        18. Allan Roy Martinez
+    </div>
+</section>
+
+<section class="section program">
+    <h2>18 Candles</h2>
+    <div class="blank-space">
+        1. Erica<br>
+        2. Erica<br>
+        3. Erica<br>
+        4. Erica<br>
+        5. Erica<br>
+        6. Erica<br>
+        7. Erica<br>
+        8. Erica<br>
+        9. Erica<br>
+        10. Erica<br>
+        11. Erica<br>
+        12. Erica<br>
+        13. Erica<br>
+        14. Erica<br>
+        15. Erica<br>
+        16. Erica<br>
+        17. Erica<br>
+        18. Erica
+    </div>
+</section>
+
+<section class="footer">
+    "Let your light shine and follow your dreams."
+</section>
+
+</div>
+
+<script>
+function enterSite() {
+    document.getElementById("openingPage").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+    document.getElementById("bgMusic").play();
+}
+
+var eventDate = new Date("March 21, 2026 20:00:00").getTime();
+
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = eventDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML =
+        days + " Days " + hours + " Hours " +
+        minutes + " Minutes " + seconds + " Seconds ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "🎉 It's Party Time! 🎉";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
